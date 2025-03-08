@@ -1,0 +1,109 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Alice", serif;
+  line-height: 1.5em; /* Espaçamento entre linhas relativo ao tamanho da fonte */
+  color: #573a37;
+  font-size: 16px; /* Tamanho da fonte base em pixels */
+}
+
+body {
+  background-image: url(assets/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#page {
+  width: 800px; /* Largura fixa em pixels */
+  padding: 24px; /* Preenchimento em pixels */
+  border-radius: 24px; /* Raio da borda em pixels */
+  background-color: #f0e8c2;
+  margin: 48px auto; /* Margens em pixels */
+}
+
+img {
+  border-radius: 16px; /* Raio da borda em pixels */
+  max-width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  padding: 6px 18px; /* Preenchimento em pixels */
+}
+
+h1 {
+  line-height: 1.4em; /* Espaçamento entre linhas relativo ao tamanho da fonte */
+  font-size: 40px; /* Tamanho da fonte em pixels */
+  color: #291b1a;
+  margin-bottom: 4px; /* Margem em pixels */
+}
+
+h2 {
+  color: #291b1a;
+  margin: 24px 0 4px 0; /* Margens em pixels */
+}
+
+p {
+  font-size: 1em; /* Tamanho da fonte relativo ao tamanho da fonte base */
+  margin-top: 4px; /* Margem em pixels */
+}
+
+.preparation-steps .sem-margem {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 4px; /* Margem em pixels */
+  list-style-type: disc;
+  padding-left: 20px; /* Preenchimento em pixels */
+}
+
+.recipe-details {
+  margin-top: 10px; /* Margem em pixels */
+}
+
+.recipe-details p {
+  margin: 0;
+}
+
+.preparation-steps p {
+  margin-bottom: 15px; /* Margem em pixels */
+}
+
+/* Media Query para Responsividade */
+@media (max-width: 800px) {
+  #page {
+    width: 90%; /* Largura em porcentagem para responsividade */
+    margin: 24px auto; /* Margens em pixels */
+    padding: 16px; /* Preenchimento em pixels */
+  }
+
+  h1 {
+    font-size: 32px; /* Tamanho da fonte em pixels */
+  }
+}
+
+/* Footer */
+footer {
+  margin-bottom: 48px; /* Margem em pixels */
+  color: #f0e8c2; /* Cor alterada para contraste */
+  text-align: center;
+  padding: 20px 0; /* Preenchimento em pixels */
+}
+
+footer p {
+  margin-top: 0;
+  font-size: 1.25em; /* Tamanho da fonte relativo ao tamanho da fonte base */
+}
+
+footer img {
+  width: 22px; /* Largura em pixels */
+  height: auto;
+}
